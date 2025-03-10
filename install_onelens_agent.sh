@@ -164,7 +164,7 @@ spec:
     - /bin/sh
     - -c
     - |
-      aws s3 ls s3://onelens-kubernetes-agent/$TENANT_NAME &&
+      aws s3 ls s3://onelens-kubernetes-agent/ &&
       echo "success" > /tmp/result ||
       echo "failed" > /tmp/result
     volumeMounts:
